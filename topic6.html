@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Topic 6</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" href="about.css">
+  </head>
+  <body>
+  <nav class="nav navbar navbar-inner navbar-default"> 
+    <div class="container-head container">
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a href="hacktober.html"><img id="image" src=""></a>
+          </div>
+          <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar list-item">
+              <li><a href="hacktober.html">Home</a></li>
+                <li><a href="topic1.html">Topic 1</a></li>
+                <li><a href="topic2.html">Topic 2</a></li>
+                <li><a href="quiz1.html">Quiz 1</a></li>
+                <li><a href="topic3.html">Topic 3</a></li>
+                <li><a href="topic4.html">Topic 4</a></li>
+                <li><a href="quiz2.html">Quiz 2</a></li>
+                <li><a href="topic5.html">Topic 5</a></li>
+                <li><a href="topic6.html">Topic 6</a></li>
+                <li><a href="quiz3.html">Quiz 3</a></li>
+            </ul>
+            </ul>
+          </div>
+      </div>
+  </nav>
+    <div class="container">
+      <h1 class="title-1">CSS Tutorial - 6: CSS Links</h1>
+      <div class="section">
+      </br>
+      <h2 class="title-2"></h2>
+      </br>
+      <div>
+        With CSS, links can be styled in different ways.
+        Links can be styled with any CSS property (e.g. color, font-family, background, etc.).
+        <h3 class="title-3">Examples</h3>
+        <div>
+            <h4 class="title-4">1. Text Decoration</h4>
+            <div>
+                The text-decoration property is mostly used to remove underlines from links:
+            </div>
+            <div class="code">
+                <pre>
+                    a:link {
+                        text-decoration: none;
+                      }
+                      
+                      a:visited {
+                        text-decoration: none;
+                      }
+                      
+                      a:hover {
+                        text-decoration: underline;
+                      }
+                      
+                      a:active {
+                        text-decoration: underline;
+                      }
+                </pre>
+            </div>
+        </div>
+        <div>
+            <h4 class="title-4">2. Background Color</h4>
+            <div>
+                The background-color property can be used to specify a background color for links:
+            <div class="code">
+                <pre>
+                    a:link {
+                        background-color: yellow;
+                      }
+                      
+                      a:visited {
+                        background-color: cyan;
+                      }
+                      
+                      a:hover {
+                        background-color: lightgreen;
+                      }
+                      
+                      a:active {
+                        background-color: hotpink;
+                      } 
+                </pre>
+            </div>
+        </div>
+        <div>
+            <h4 class="title-4">3. Link Buttons</h4>
+            <div>
+                This example demonstrates a more advanced example 
+                where we combine several CSS properties to display links as boxes/buttons:
+                <div class="code">
+                <pre>
+                    a:link, a:visited {
+                        background-color: #f44336;
+                        color: white;
+                        padding: 14px 25px;
+                        text-align: center;
+                        text-decoration: none;
+                        display: inline-block;
+                      }
+                      
+                      a:hover, a:active {
+                        background-color: red;
+                      }
+                </pre>
+            </div>
+        </div>
+        <div>
+            <h4 class="title-4">4. Change the cursor</h4>
+            <div>
+                The cursor property specifies the type of cursor to display. This example 
+                demonstrates the different types of cursors (can be useful for links).           <div class="code">
+                <pre>
+                    *&lt;span style="cursor:auto"&gt;auto&lt;/span>&lt;br>
+                    &lt;span style="cursor:crosshair"&gt;crosshair&lt;/span>&lt;br>
+                    &lt;span style="cursor:default"&gt;default&lt;/span>&lt;br>
+                    &lt;span style="cursor:e-resize"&gt;e-resize&lt;/span>&lt;br>
+                    &lt;span style="cursor:help"&gt;help&lt;/span>&lt;br>
+                    &lt;span style="cursor:move"&gt;move&lt;/span>&lt;br>
+                    &lt;span style="cursor:n-resize"&gt;n-resize&lt;/span>&lt;br>
+                    &lt;span style="cursor:ne-resize"&gt;ne-resize&lt;/span>&lt;br>
+                    &lt;span style="cursor:nw-resize"&gt;nw-resize&lt;/span>&lt;br>
+                    &lt;span style="cursor:pointer"&gt;pointer&lt;/span>&lt;br>
+                    &lt;span style="cursor:progress"&gt;progress&lt;/span>&lt;br>
+                    &lt;span style="cursor:s-resize"&gt;s-resize&lt;/span>&lt;br>
+                    &lt;span style="cursor:se-resize"&gt;se-resize&lt;/span>&lt;br>
+                    &lt;span style="cursor:sw-resize"&gt;sw-resize&lt;/span>&lt;br>
+                    &lt;span style="cursor:text"&gt;text&lt;/span><br>
+                    &lt;span style="cursor:w-resize"&gt;w-resize&lt;/span>&lt;br>
+                    &lt;span style="cursor:wait"&gt;wait&lt;/span>&lt;br>
+                    
+                </pre>
+            </div>
+        </div>
+        <div>
+            <h4 class="title-4">5. Add different styles to hyperlinks</h4>
+            <div>
+                This example demonstrates how to add other styles to hyperlinks.
+                <div class="code">
+                <pre>
+                    a.one:link {color:#ff0000;}
+                    a.one:visited {color:#0000ff;}
+                    a.one:hover {color:#ffcc00;}
+
+                    a.two:link {color:#ff0000;}
+                    a.two:visited {color:#0000ff;}
+                    a.two:hover {font-family:monospace;}
+
+                </pre>
+            </div>
+        </div>
+        
+        
+    
+      </div>
+    </br>
+      </ul>
+    </br>
+    </br>
+    </div>
+  </div>
+</br>
+  <footer>
+  <div class="container">
+      <div class="section">
+          <p style="text-align: center"><img src="heart.png" alt="Love" height="20" width="21.34"><b> CSS</b></p>
+      </div>
+  </div>
+  </footer>
+   
+      <script src="script.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+          crossorigin="anonymous"></script>
+        <!-- Custom JS for search feature -->
+        <script src="/scripts/search.js" async defer></script>
+        <!-- Bootstrap JS CDN -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    </body>
+</html>
